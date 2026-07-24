@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design.today - Home</title>
+    
+    <!-- Google / Search Engine Meta Tags -->
+    <meta name="description" content="Discover and share the best UI/UX designs, animations, and illustrations.">
+    <meta name="keywords" content="UI Design, App Design, Animation, Illustration, Typography, Design Inspiration">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://yourwebsite.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Design.today - Home">
+    <meta property="og:description" content="Discover and share the best UI/UX designs, animations, and illustrations.">
+    <meta property="og:image" content="images/card-1.jpg">
+
+    <!-- Google Font: Nunito Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brandPink: '#ff2d78',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fafafa] font-sans text-gray-800 flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#1a1a1a] text-gray-300 flex flex-col justify-between hidden lg:flex shrink-0">
+        <div>
+            <div class="p-6 text-white text-xl font-bold tracking-wider">design<span class="text-brandPink">.today</span></div>
+            <nav class="mt-4 flex flex-col gap-1">
+                <a href="index.html" class="flex items-center gap-4 px-6 py-3 bg-brandPink text-white font-medium rounded-r-full">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2M5 10l9-9m9 9v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    Home
+                </a>
+                <a href="#" class="flex items-center gap-4 px-6 py-3 hover:bg-white/5 transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    Explore
+                </a>
+                <a href="#" class="flex items-center gap-4 px-6 py-3 hover:bg-white/5 transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                    Folders
+                </a>
+                <a href="#" class="flex items-center gap-4 px-6 py-3 hover:bg-white/5 transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z"></path></svg>
+                    Favourites
+                </a>
+                <a href="profile.html" class="flex items-center gap-4 px-6 py-3 hover:bg-white/5 transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    Activities
+                </a>
+            </nav>
+            <div class="px-6 mt-8">
+                <p class="text-xs text-gray-500 uppercase tracking-wider mb-4">Following</p>
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3"><img src="images/sidebar-user-1.jpg" class="w-8 h-8 rounded-full object-cover"><span class="text-sm">Sajon</span></div>
+                    <div class="flex items-center gap-3"><img src="images/sidebar-user-2.jpg" class="w-8 h-8 rounded-full object-cover"><span class="text-sm">Tran Mau Tri Tam</span></div>
+                    <div class="flex items-center gap-3"><img src="images/sidebar-user-3.jpg" class="w-8 h-8 rounded-full object-cover"><span class="text-sm">Ghani Pradita</span></div>
+                    <div class="flex items-center gap-3"><img src="images/sidebar-user-4.jpg" class="w-8 h-8 rounded-full object-cover"><span class="text-sm">David Kovalev</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 text-xs text-gray-500">Load more (15)</div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col min-w-0">
+        <!-- Top Header -->
+        <header class="bg-white border-b border-gray-100 px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center bg-gray-100 rounded-full px-4 py-2 w-72">
+                <svg class="w-5 h-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" placeholder="Search inspiration" class="bg-transparent border-none outline-none text-sm w-full">
+            </div>
+            <div class="flex items-center gap-6">
+                <span class="text-brandPink font-bold text-sm cursor-pointer">GO PRO!</span>
+                <svg class="w-6 h-6 text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                <svg class="w-6 h-6 text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                
+                <a href="profile.html" class="block w-9 h-9 rounded-full overflow-hidden border-2 border-brandPink hover:scale-105 transition shadow-sm">
+                    <img src="images/profile-icon.jpg" alt="Profile" class="w-full h-full object-cover">
+                </a>
+                <button class="bg-brandPink text-white px-5 py-2 rounded-full font-medium text-sm hover:opacity-90 transition shadow-md">Upload</button>
+            </div>
+        </header>
+
+        <!-- Content Body -->
+        <div class="p-8 flex-1">
+            <!-- Filter Categories -->
+            <div class="flex items-center justify-between pb-4 mb-6">
+                <div class="flex items-center gap-3 overflow-x-auto">
+                    <button class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl text-sm font-semibold transition">All</button>
+                    <button class="bg-brandPink text-white px-4 py-2 rounded-xl text-sm font-semibold shadow-md">Web Design</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl text-sm font-semibold transition">UI</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl text-sm font-semibold transition">App Design</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl text-sm font-semibold transition">Animation</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl text-sm font-semibold transition">Illustration</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl text-sm font-semibold transition">Typography</button>
+                </div>
+                <button class="flex items-center gap-2 border border-gray-200 bg-white px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-50 transition shadow-sm shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707v4.172a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586a1 1 0 00-.293-.707L.293 7.293A1 1 0 010 6.586V4z"></path></svg>
+                    Filter
+                </button>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">UI Components for Unity Gaming</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">Analysis Mobile App - Wireframes</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">Tokoto - Dark mode - Task Management App</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-4.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">Live streaming application for gamers</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-5.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">Dark Mockup for Unity Gaming</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-6.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">SMM - Social Media Management - App UI</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-7.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">Food App 2.0</h3>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group">
+                    <div class="rounded-xl overflow-hidden mb-3 bg-gray-100 h-40"><img src="images/card-8.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></div>
+                    <h3 class="font-semibold text-sm text-gray-800">Live streaming application for gamers</h3>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <button class="bg-gray-200 text-gray-700 px-6 py-2.5 rounded-xl text-sm font-medium hover:bg-gray-300 transition shadow-sm">Load more</button>
+            </div>
+
+            <!-- Top Designers Section (IMG_9348) -->
+            <div class="mt-16">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-lg font-bold text-gray-900">Top Designers</h2>
+                    <span class="text-xs text-gray-400 cursor-pointer hover:underline">View all</span>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-1.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Tran Mau Tri Tam</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">San Jose, America</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Following</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-2.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Ghani Pradita</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">Dubai</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Follow</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-3.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Danya Korneyev</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">New York, NY, US</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Follow</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-4.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Umar Pradiata</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">Yogyakarta, Indonesia</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Follow</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-1.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Sajon</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">Cairo</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Following</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-2.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Danilo Gusakov</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">Moscow, Russia</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Follow</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-3.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Ryan Putnam</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">Colorado Springs</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Follow</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl text-center shadow-sm">
+                        <img src="images/sidebar-user-4.jpg" class="w-12 h-12 rounded-full mx-auto object-cover mb-2">
+                        <h4 class="text-xs font-bold truncate">Dmitry Lauretsky</h4>
+                        <p class="text-[10px] text-gray-400 mb-3 truncate">Minsk, Belarus</p>
+                        <button class="w-full border border-gray-200 text-xs py-1.5 rounded-lg hover:bg-gray-50 transition">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section (IMG_9349) -->
+        <footer class="bg-white border-t border-gray-100 px-8 py-10 mt-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-xs text-gray-500 mb-8">
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-3">For designers</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brandPink">Go Pro!</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Explore design work</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Design blog</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Overtime podcast</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Dribbble meetups</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Playoffs</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Weekly Warm-Up</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Code of conduct</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-3">Hire designers</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brandPink">Post a job opening</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Post a freelance project</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Search for designers</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Brands</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Advertise with us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-3">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brandPink">About</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Careers</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Support</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Media kit</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Dribbble shop</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Testimonials</a></li>
+                        <li><a href="#" class="hover:text-brandPink">API</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Terms of service</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-3">Directories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brandPink">Top designers</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Top design teams</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Design jobs</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Tags</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Places</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Design assets</a></li>
+                        <li><a href="#" class="hover:text-brandPink">Shop Creative Market</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-6 border-t border-gray-100 text-xs text-gray-400">
+                <div class="flex items-center gap-4">
+                    <span>© design.today</span>
+                    <a href="#" class="hover:text-brandPink">Terms</a>
+                    <a href="#" class="hover:text-brandPink">Privacy</a>
+                </div>
+                <div>For <strong>Smartacademy</strong></div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
